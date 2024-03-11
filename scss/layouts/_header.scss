@@ -1,0 +1,92 @@
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #7432FA;
+    z-index: 5;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 15px rgb(136, 134, 134);
+    .nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            // logo
+            .logo {
+                background-color: #ffffff;
+                border-radius: 6px;
+                padding: 4px 10px;
+                transition: all 0.3s ease;
+                .logo_item {
+                    color: #7432FA;
+                }
+                &:hover {
+                    transform: scale(1.1) rotate(-6deg);
+                }
+            }
+
+            .nav_item {
+                a {
+                    color: #EAE0FE;
+                    font-size: 14px;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 40%;
+
+            input {
+                width: 250px;
+                padding: 10px;
+                padding-left: 40px;
+                font-size: 14px;
+                border: 1px solid #cab6f49e;
+                border-radius: 6px;
+                background: transparent;
+                color: #b29cde;
+                &::placeholder {
+                    color: #b29cde; 
+                    font-weight: 600;
+                    font-size: 16px;  
+                }
+                
+                &:focus,
+                &:focus ~ i {
+                    outline: none;
+                    color: #ffffff;
+                }
+            }
+
+            i {
+                position: absolute;
+                left: 10px;
+                font-size: 25px;
+                color: #CAB6F4;
+            }
+        }
+
+        .nav_left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            i {
+                color: #ffffff;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.sitebar {
+    position: fixed;
+    left: 150px;
+    width: 10%;
+    top: 90px;
+    height: 85vh;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        ul {
+            li:nth-child(1) {
+                color: #000000;
+                font-weight: 550;
+                display: flex;
+                gap: 10px;
+                & > i {
+                    color: #6610F2;
+                }
+
+            }
+            li {
+                display: flex;
+                gap: 5px;
+                a {
+                    font-size: 13px;
+                    padding: 8px 10px;
+                    border-radius: 5px;
+                    color: #212529;
+
+                    &:hover {
+                        background-color: #F0E9FE;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
