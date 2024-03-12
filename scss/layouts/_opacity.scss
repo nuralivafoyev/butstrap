@@ -1,0 +1,35 @@
+#opacity{
+    padding-top: 120px;
+    // background-color: red;
+    width: 50vw;
+    height: 100vh;
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .opacity-cards {
+        display: flex;
+        gap: 10px;
+
+        .opc-card {
+            width: 60px;
+            height: 50px;
+            background-color: #0D6EFD;
+            border-radius: 8px;
+            display: flex;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            text-align: center;          
+        }
+        .opc-card:nth-child(2){
+            opacity: 0.75;
+        }
+        .opc-card:nth-child(3){
+            opacity: 0.5;
+        }
+        .opc-card:nth-child(4){
+            opacity: 0.25;
+        }
+    }
+}

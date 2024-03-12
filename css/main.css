@@ -13,10 +13,52 @@ a {
   text-decoration: none;
 }
 
+.codes {
+  background-color: #F8F9FA;
+  margin-top: 50px;
+  border: 2px solid #DEE2E6;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+.codes .red {
+  width: 8px;
+  height: 8px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.codes .orange {
+  width: 8px;
+  height: 8px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.codes .green {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(145, 222, 30);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   width: 1250px;
   font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 850px;
+  padding-top: 150px;
+  margin-left: 350px;
 }
 
 header {
@@ -167,4 +209,95 @@ header .nav .nav_left i {
   color: rgba(30, 30, 30, 0.8);
   font-size: 14px;
   transition: all 0.2s ease;
+}
+
+#buttons {
+  padding-top: 120px;
+  width: 50vw;
+  height: 100vh;
+}
+#buttons h1 {
+  margin-bottom: 5px;
+}
+#buttons button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#buttons button:hover {
+  opacity: 0.8;
+}
+#buttons .btn-primary {
+  background-color: #0D6EFD;
+  color: #fff;
+}
+#buttons .btn-secondary {
+  background-color: #6C757D;
+}
+#buttons .btn-danger {
+  background-color: crimson;
+}
+#buttons .btn-warning {
+  background-color: #FFC107;
+  color: #000;
+}
+#buttons .btn-info {
+  background-color: #0DCAF0;
+  color: #000;
+}
+
+#soon {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#soon p {
+  font-size: 40px;
+  color: #0D6EFD;
+  font-weight: 600;
+}
+#soon small {
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(206, 204, 204);
+}
+
+#opacity {
+  padding-top: 120px;
+  width: 50vw;
+  height: 100vh;
+}
+#opacity h1 {
+  margin-bottom: 10px;
+}
+#opacity .opacity-cards {
+  display: flex;
+  gap: 10px;
+}
+#opacity .opacity-cards .opc-card {
+  width: 60px;
+  height: 50px;
+  background-color: #0D6EFD;
+  border-radius: 8px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#opacity .opacity-cards .opc-card:nth-child(2) {
+  opacity: 0.75;
+}
+#opacity .opacity-cards .opc-card:nth-child(3) {
+  opacity: 0.5;
+}
+#opacity .opacity-cards .opc-card:nth-child(4) {
+  opacity: 0.25;
 }/*# sourceMappingURL=main.css.map */

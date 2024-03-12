@@ -4,3 +4,46 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.codes {
+    background-color: #F8F9FA;
+    margin-top: 50px;
+    border: 2px solid #DEE2E6;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 8px;
+    .red {
+        width: 8px;
+        height: 8px;
+        background-color: crimson;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+    .orange {
+        width: 8px;
+        height: 8px;
+        background-color: #ffcc00;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+    .green {
+        width: 8px;
+        height: 8px;
+        background-color: rgb(145, 222, 30);
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
